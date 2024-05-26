@@ -37,7 +37,7 @@ columns = joblib.load('features_list.joblib')
 
 user_input = [{
 "Year":year,
-"Selling_Price":price/10_000,
+"Selling_Price":price of new car/10_000,
 "Kms_Driven": kms,
 "Fuel_Type":fuel_type,
 "Seller_Type":seller_type,
