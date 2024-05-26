@@ -17,12 +17,12 @@ st.markdown("<h1 style='text-align: right; color: red;'car_img.jpg", unsafe_allo
 
 #year
 #year = st.number_input('Year', min_value=2014, max_value=2023, value=2019, step=1, label_visibility="visible")
-year = st.selectbox("Manufacturing year of the car", (2014,2015,2016,2017,2018,2019,2020,2021,2022,2023))
-#Present price
-price = st.slider('Price', min_value=1000, max_value=100_000, value=3000, step=250, label_visibility="visible")
+year = st.selectbox("Manufacturing year of the car", (2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024))
+#Present new price
+price of new car = st.slider('Price', min_value=15_000, max_value=100_000, value=3000, step=500, label_visibility="visible")
 
 #Kms_Driven
-kms = st.slider("Kms Driven", min_value=0, value=100_000, step=100)
+kms = st.slider("Kms Driven", min_value=0, value=150_000, step=1000)
 #Owner
 owner = st.selectbox("How many owners does car have", (0,1,2,3))
 #Fuel_Type_Diesel
