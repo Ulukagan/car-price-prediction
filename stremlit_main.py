@@ -19,7 +19,7 @@ st.markdown("<h1 style='text-align: right; color: red;'car_img.jpg", unsafe_allo
 #year = st.number_input('Year', min_value=2014, max_value=2023, value=2019, step=1, label_visibility="visible")
 year = st.selectbox("Manufacturing year of the car", (2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024))
 #Present new price
-price new car = st.slider('Price', min_value=15_000, max_value=100_000, value=3000, step=500, label_visibility="visible")
+price = st.slider('Price', min_value=15_000, max_value=100_000, value=3000, step=500, label_visibility="visible")
 
 #Kms_Driven
 kms = st.slider("Kms Driven", min_value=0, value=150_000, step=1000)
@@ -37,7 +37,7 @@ columns = joblib.load('features_list.joblib')
 
 user_input = [{
 "Year":year,
-"Selling_Price":price new car/10_000,
+"Selling_Price":price/10_000,
 "Kms_Driven": kms,
 "Fuel_Type":fuel_type,
 "Seller_Type":seller_type,
